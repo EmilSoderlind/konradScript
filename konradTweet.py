@@ -1,7 +1,6 @@
 #!/usr/bin/python
 import time;
 from twython import Twython
-import averageTimesFromKonrad
 import os, errno
 import subprocess
 import twitterAPIinformation
@@ -32,7 +31,6 @@ def konradTweet():
     if(sec<10):
         sec = "0{}".format(sec)
 
-    #mess = "Posten har kommit! {}:{}. {} #nukommerpostenkonrad".format(min,sec,averageTimesFromKonrad.getConfIntervString())
     mess = "Posten har kommit! {}:{}.".format(min,sec)
 
     photo = open('rotatedMailImage.jpg', 'rb')
