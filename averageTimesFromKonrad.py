@@ -1,4 +1,5 @@
 from TwitterSearch import *
+import twitterAPIinformation
 
 import numpy as np
 import scipy.stats as st
@@ -33,11 +34,10 @@ def extractAverageSecFromTweets():
 
         # it's about time to create a TwitterSearch object with our secret tokens
         ts = TwitterSearch(
-            consumer_key = "7ysgIYZTy3I8EsMN1uc6etqTs",
-            consumer_secret = "uUvxdPZMemlNlQobOdp605LViFNd7yXcfxMG3i0eharWvJCY5u",
-            access_token = "889782853373964288-pqOpJ37QVUbWBEy3jJmlUPgfIaeYUbi",
-            access_token_secret = "EVRcQqX4axUk7moG0Q8EmS1DwReix3FPA0uvi9KvjkmLa"
-
+            consumer_key = twitterAPIinformation.APP_KEY
+            consumer_secret = twitterAPIinformation.APP_SECRET
+            access_token = twitterAPIinformation.OAUTH_TOKEN
+            access_token_secret = twitterAPIinformation.OAUTH_TOKEN_SECRET
         )
 
         # this is where the fun actually starts :)
