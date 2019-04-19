@@ -34,9 +34,9 @@ def extractAverageSecFromTweets():
 
         # it's about time to create a TwitterSearch object with our secret tokens
         ts = TwitterSearch(
-                consumer_key = twitterAPIinformation.APP_KEY
-                consumer_secret = twitterAPIinformation.APP_SECRET
-                access_token = twitterAPIinformation.OAUTH_TOKEN
+                consumer_key = twitterAPIinformation.APP_KEY,
+                consumer_secret = twitterAPIinformation.APP_SECRET,
+                access_token = twitterAPIinformation.OAUTH_TOKEN,
                 access_token_secret = twitterAPIinformation.OAUTH_TOKEN_SECRET
         )
 
