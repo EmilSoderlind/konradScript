@@ -1,3 +1,5 @@
+# coding=utf-8
+
 from fractions import Fraction
 import picamera
 from PIL import Image
